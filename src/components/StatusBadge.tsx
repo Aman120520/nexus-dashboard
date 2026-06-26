@@ -1,0 +1,14 @@
+import { statusMeta } from "@/lib/display";
+import type { MilestoneStatus } from "@/lib/types";
+
+export function StatusBadge({ status }: { status: MilestoneStatus }) {
+  const meta = statusMeta[status];
+
+  return (
+    <span
+      className={`inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium ring-1 ring-inset ${meta.badgeClass}`}
+    >
+      {meta.label}
+    </span>
+  );
+}
