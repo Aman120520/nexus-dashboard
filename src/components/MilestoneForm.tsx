@@ -63,7 +63,7 @@ export function MilestoneForm({
           value={title}
           onChange={(e) => setTitle(e.target.value)}
           placeholder="e.g. Learn React Server Components"
-          className="mt-1 w-full rounded-lg border border-zinc-300 px-3 py-2 text-sm outline-none focus:border-zinc-500"
+          className="mt-1 w-full rounded-lg border border-zinc-300 bg-white px-3 py-2 text-sm outline-none focus:border-violet-400"
           autoFocus
         />
       </div>
@@ -78,7 +78,7 @@ export function MilestoneForm({
           onChange={(e) => setDescription(e.target.value)}
           placeholder="What does done look like?"
           rows={2}
-          className="mt-1 w-full rounded-lg border border-zinc-300 px-3 py-2 text-sm outline-none focus:border-zinc-500"
+          className="mt-1 w-full rounded-lg border border-zinc-300 bg-white px-3 py-2 text-sm outline-none focus:border-violet-400"
         />
       </div>
 
@@ -94,7 +94,7 @@ export function MilestoneForm({
                 onClick={() => toggleCategory(category)}
                 className={`rounded-full px-3 py-1 text-xs font-medium ring-1 ring-inset ${
                   active
-                    ? "bg-zinc-900 text-white ring-zinc-900"
+                    ? "bg-violet-600 text-white ring-violet-600"
                     : "bg-white text-zinc-600 ring-zinc-200 hover:ring-zinc-300"
                 }`}
               >
@@ -109,7 +109,7 @@ export function MilestoneForm({
         <button
           type="submit"
           disabled={!title.trim()}
-          className="rounded-lg bg-zinc-900 px-4 py-2 text-sm font-medium text-white hover:bg-zinc-800 disabled:opacity-40"
+          className="rounded-lg bg-violet-600 px-4 py-2 text-sm font-medium text-white hover:bg-violet-700 disabled:opacity-40"
         >
           {submitLabel}
         </button>

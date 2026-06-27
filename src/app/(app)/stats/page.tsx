@@ -35,7 +35,7 @@ export default function StatsPage() {
         <StatCard label="Overall" value={`${summary.percentComplete}%`} />
       </section>
 
-      <section className="rounded-xl border border-zinc-200 bg-white p-5">
+      <section className="rounded-2xl bg-zinc-50 p-5">
         <div className="flex items-center justify-between">
           <p className="text-sm font-medium text-zinc-600">Overall completion</p>
           <p className="text-sm font-semibold text-zinc-900">
@@ -47,7 +47,7 @@ export default function StatsPage() {
         </div>
       </section>
 
-      <section className="rounded-xl border border-zinc-200 bg-white p-5">
+      <section className="rounded-2xl bg-zinc-50 p-5">
         <h2 className="text-sm font-semibold text-zinc-600">Coverage by tag</h2>
         <ul className="mt-4 space-y-2">
           {coverage.map((item) => (

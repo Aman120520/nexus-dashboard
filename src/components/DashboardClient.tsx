@@ -38,7 +38,7 @@ export function DashboardClient() {
         <button
           type="button"
           onClick={handleReset}
-          className="shrink-0 rounded-lg border border-zinc-200 bg-white px-3 py-1.5 text-sm text-zinc-600 hover:bg-zinc-50"
+          className="shrink-0 rounded-full border border-zinc-200 bg-white px-4 py-1.5 text-sm text-zinc-600 hover:bg-zinc-50"
         >
           Reset
         </button>
@@ -55,7 +55,7 @@ export function DashboardClient() {
         <StatCard label="Overall" value={`${summary.percentComplete}%`} />
       </section>
 
-      <section className="rounded-xl border border-zinc-200 bg-white p-5">
+      <section className="rounded-2xl bg-zinc-50 p-5">
         <div className="flex items-center justify-between">
           <p className="text-sm font-medium text-zinc-600">Overall completion</p>
           <p className="text-sm font-semibold text-zinc-900">
@@ -71,7 +71,7 @@ export function DashboardClient() {
         <AddMilestoneForm onAdd={addMilestone} />
 
         {milestones.length === 0 ? (
-          <p className="rounded-xl border border-dashed border-zinc-200 bg-white p-8 text-center text-sm text-zinc-400">
+          <p className="rounded-2xl border border-dashed border-zinc-200 bg-zinc-50 p-8 text-center text-sm text-zinc-400">
             No milestones yet. Add your first one above.
           </p>
         ) : (

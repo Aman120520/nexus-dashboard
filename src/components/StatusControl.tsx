@@ -13,7 +13,7 @@ export function StatusControl({
   onChange: (status: MilestoneStatus) => void;
 }) {
   return (
-    <div className="inline-flex rounded-lg border border-zinc-200 bg-zinc-50 p-0.5">
+    <div className="inline-flex rounded-lg border border-zinc-200 bg-white p-0.5">
       {order.map((status) => {
         const active = status === value;
         return (
@@ -23,7 +23,7 @@ export function StatusControl({
             onClick={() => onChange(status)}
             className={`rounded-md px-2.5 py-1 text-xs font-medium transition-colors ${
               active
-                ? "bg-white text-zinc-900 shadow-sm"
+                ? "bg-violet-50 text-violet-600 shadow-sm"
                 : "text-zinc-500 hover:text-zinc-800"
             }`}
           >

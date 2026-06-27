@@ -21,7 +21,7 @@ export function AddMilestoneForm({
       <button
         type="button"
         onClick={() => setOpen(true)}
-        className="w-full rounded-xl border border-dashed border-zinc-300 bg-white px-5 py-4 text-sm font-medium text-zinc-500 hover:border-zinc-400 hover:text-zinc-700"
+        className="w-full rounded-2xl border border-dashed border-zinc-300 bg-zinc-50 px-5 py-4 text-sm font-medium text-zinc-500 hover:border-violet-300 hover:text-violet-600"
       >
         + Add milestone
       </button>
@@ -29,7 +29,7 @@ export function AddMilestoneForm({
   }
 
   return (
-    <div className="rounded-xl border border-zinc-200 bg-white p-5">
+    <div className="rounded-2xl bg-zinc-50 p-5">
       <MilestoneForm
         submitLabel="Add"
         onSubmit={handleSubmit}

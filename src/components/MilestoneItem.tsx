@@ -22,7 +22,7 @@ export function MilestoneItem({
 
   if (editing) {
     return (
-      <article className="rounded-xl border border-zinc-200 bg-white p-5">
+      <article className="rounded-2xl bg-zinc-50 p-5">
         <MilestoneForm
           submitLabel="Save"
           initialValues={{
@@ -41,7 +41,7 @@ export function MilestoneItem({
   }
 
   return (
-    <article className="rounded-xl border border-zinc-200 bg-white p-5">
+    <article className="rounded-2xl bg-zinc-50 p-5">
       <div className="flex items-start justify-between gap-4">
         <div>
           <p className="text-xs font-semibold tracking-wide text-zinc-400">
